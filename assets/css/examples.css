@@ -12,9 +12,23 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: rgba(255,255,255,0.5);
 }
-.container {
-  width: 100%;
+ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  font-size: 16px;
+  color: white;
 }
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .wrap{
 	margin-left: auto;
 	margin-right: auto;
@@ -111,14 +125,27 @@ p {
   text-align: center;
 }
 /* services specific */
-.services {
+.row-services {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.15);
+}
+.col-services {
   padding-left: 15%;
   padding-right: 15%;
-  background-color: rgba(255,255,255,0.2);
-  z-index: 1
+  z-index: 1;
+  border: 1px solid white;
 }
-.services p {
-  padding-bottom: 20px;
+
+.col-services p {
+  padding:  20px;
+}
+
+.pricing-container {
+  border: 1px solid white;
+}
+.pricing h3 {
+  margin-top: 0px;
+  padding:  20px;
 }
 .myname-slogan {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .50);
@@ -186,7 +213,7 @@ p {
 	  color: white;
 	}
 	.section h3 {
-	  font-size: 14px;
+	  font-size: 24px;
 	  color: white;
 	}
 	.services {
@@ -202,4 +229,8 @@ p {
     padding-left: 20%;
     padding-right: 20%;
   }
+  p {
+    font-size: 17px;
+  }
+
 }
