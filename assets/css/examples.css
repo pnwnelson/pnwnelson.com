@@ -136,8 +136,22 @@ p {
   border: 1px solid white;
 }
 
+.col-services-gallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20px;
+  z-index: 1;
+  border: 1px solid white;
+}
+
 .col-services p {
   padding:  20px;
+}
+
+.img-coffee {
+  display: inline-block;
+  max-width: 300px;
+  padding: 1px;
 }
 
 .pricing-container {
@@ -201,6 +215,9 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .img-coffee {
+    max-height: 150px;
+  }
 }
 @media only screen and (max-width: 768px) {
 	/* Text  */
@@ -222,6 +239,9 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
 	}
+  .img-coffee {
+    max-height: 100px;
+  }
 }
 
 @media only screen and (max-width: 401px) {
