@@ -7,11 +7,13 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 body {
 	font-size: 100%;
 	font-family: 'Lato', sans-serif;
 	color: rgba(255,255,255,0.5);
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -35,34 +37,50 @@ a {
 	width: 960px;
 	position: relative;
 }
+
 .section{
 	text-align:center;
 }
+
 /* Text  */
 .section h1 {
   font-size: 60px;
   font-weight: 300;
   color: white;
 }
+
 h2 {
-	font-size: 30px;
+	font-size: 40px;
   color: white;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 20px;
 }
+
 .section h3 {
   font-size: 20px;
   color: white;
 }
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 p {
 	font-size: 18px;
 }
+
 .section p {
   color: #336600;
 }
+
 .intro p {
 	width: 50%;
 	margin: 0 auto;
 	font-size: 1.5em;
 }
+
 /* Sectional backgrounds */
 .hello {
   background:
@@ -77,6 +95,7 @@ p {
     background-size: cover;
     background-clip: border-box;
 }
+
 .photography {
   background:
    linear-gradient(
@@ -90,6 +109,7 @@ p {
     background-size: cover;
     background-clip: border-box;
 }
+
 .hireme {
   background:
    linear-gradient(
@@ -103,6 +123,7 @@ p {
     background-size: cover;
     background-clip: border-box;
 }
+
 /* Vertically centering content in each section */
 .content-wrapper {
   position: absolute;
@@ -111,6 +132,7 @@ p {
   left: 0;
   right: 0;
 }
+
 .content {
   position: relative;
   width: 100%;
@@ -119,21 +141,22 @@ p {
   padding: 20px 40px;
   margin: 0 auto;
 }
+
 .content-inner {
   display: table-cell; /* this is the key to vertically centering*/
   vertical-align: middle;
   text-align: center;
 }
+
 /* services specific */
 .row-services {
   padding: 20px;
-  background-color: rgba(255,255,255,0.15);
 }
+
 .col-services {
   padding-left: 15%;
   padding-right: 15%;
   z-index: 1;
-  border: 1px solid white;
 }
 
 .col-services-gallery {
@@ -146,6 +169,8 @@ p {
 
 .col-services p {
   padding:  20px;
+  text-align: justify;
+  font-weight: 300;
 }
 
 .img-coffee {
@@ -155,23 +180,29 @@ p {
 }
 
 .pricing-container {
-  border: 1px solid white;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 .pricing h3 {
   margin-top: 0px;
   padding:  20px;
 }
+
 .myname-slogan {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .50);
   text-align: left;
 }
+
 .slogan {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .50);
 	padding: 30px;
 }
+
 .center {
   text-align: center;
 }
+
 .front-page-motto-1 {
     z-index: 100;
     border-top: 1px solid rgba(255,255,255,0.3);
@@ -179,25 +210,30 @@ p {
     padding-top: 40px;
     text-align: left;
 }
+
 /* Button Styling */
 .btn.outline {
     background: none;
     padding: 12px 22px;
 }
+
 .btn-primary.outline {
     border: 1px solid white;
     color: white;
 }
+
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
     color: #69BE28;
     border-color: #69BE28;
 }
+
 .btn-primary.outline:active, .btn-primary.outline.active {
     border-color: black;
     color: black;
     background-color: white;
     box-shadow: none;
 }
+
 @media only screen and (max-width: 1200px) {
   .section h1 {
     font-size: 48px;
@@ -205,6 +241,7 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
+
   .section h1 {
     font-size: 40px;
   }
@@ -215,42 +252,57 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .img-coffee {
     max-height: 150px;
   }
 }
+
 @media only screen and (max-width: 768px) {
+
 	/* Text  */
 	.section h1 {
 	  font-size: 40px;
 	  font-weight: 300;
 	  color: white;
 	}
+
 	.section h2 {
 	  color: white;
 	}
+
 	.section h3 {
 	  font-size: 24px;
 	  color: white;
 	}
+
 	.services {
 		padding-left: 15%;
 		padding-right: 15%;
     padding-top: 20px;
     padding-bottom: 20px;
 	}
+
   .img-coffee {
     max-height: 100px;
   }
 }
 
 @media only screen and (max-width: 401px) {
+
   .services {
     padding-left: 20%;
     padding-right: 20%;
   }
+
   p {
     font-size: 17px;
+  }
+
+  .col-services {
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 }
