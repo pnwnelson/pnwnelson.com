@@ -76,7 +76,10 @@ body {
 }
 
 .container {
-  margin: 0 auto
+  margin: 0 auto;
+  padding:20px;
+  background-color: rgba(255,255,255,.15);
+  border: 1px solid white;
 }
 
 /* For tablets & smart phones */
@@ -95,12 +98,6 @@ body {
   #slide4 {
     display: none;
   }
-
-@media (max-width: 600px) {
-  .container {
-    width: 480px
-  }
-}
 
 /* For smaller displays like laptops */
 @media (min-width: 768px) and (max-width: 979px) {
